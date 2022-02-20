@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block page %}
+
+  {% for msg in get_flashed_messages() %}
+    <h2> {{msg}} </h2>
+  {% endfor %}
+    <h1>Thank You!</h1>
+
+{% endblock %}
